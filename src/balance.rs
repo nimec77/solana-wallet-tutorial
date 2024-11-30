@@ -5,7 +5,7 @@ use std::str::FromStr;
 
 pub(super) fn get_balance(address: &str, client: &RpcClient) {
     let pub_key = Pubkey::from_str(address).unwrap();
-    let balance = client.get_balance(&pub_key).unwrap();
+    let balance_value = client.get_balance(&pub_key).unwrap();
 
-    println!("Balance for {address}: {}", lamports_to_sol(balance));
+    println!("Balance for {address}: {}", lamports_to_sol(balance_value));
 }
