@@ -5,6 +5,9 @@ mod cli_parser;
 mod cluster_info;
 mod lamports;
 mod generate_keys;
+mod balance;
+mod airdrop;
+mod transfer;
 
 const SERVER_URL: &str = "https://api.devnet.solana.com";
 
